@@ -54,7 +54,7 @@ async function extractFieldFromRequests(requests, endpoint, field) {
 
 async function main() {
   const seenValues = await loadSeenValues();
-  const browser = await chromium.launch({ headless: false });
+  const browser = await chromium.launch({ headless: true });
   const context = await browser.newContext();
   const page = await context.newPage();
   try {
