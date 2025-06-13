@@ -3,8 +3,8 @@ FROM mcr.microsoft.com/playwright:v1.43.0-jammy
 
 WORKDIR /app
 COPY package.json ./
-RUN npm install
-RUN npx playwright install --with-deps --omit=dev
+RUN npm install --omit=dev
+RUN npx playwright install --with-deps
 COPY script.js ./
 COPY seen_values.json ./
 
