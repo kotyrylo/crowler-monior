@@ -1,0 +1,13 @@
+{
+  "name": "my-script",
+  "version": "1.0.0",
+  "description": "Playwright script for Railway deployment.",
+  "main": "script.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node script.js"
+  },
+  "dependencies": {
+    "playwright": "^1.43.0"
+  }
+}
